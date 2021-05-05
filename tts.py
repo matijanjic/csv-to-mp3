@@ -3,9 +3,9 @@ import os
 
 os.chdir('/home/matija/Desktop/TTS')
 
-with open("test.txt", "r") as t:
+with open("sentences.csv", "r") as t:
     contents = t.read()
-    split = contents.split('\n\n')
+    split = contents.split('\n')
 
 
 language = "en"
