@@ -16,6 +16,6 @@ for article in split:
     
     if article.strip():
         myobj = gTTS(text = article, lang = language, slow = False)
-        myobj.save("text%s.mp3" % index)
+        myobj.save("output/pairs/%s.mp3" % article)
         index += 1
 
